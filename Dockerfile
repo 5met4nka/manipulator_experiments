@@ -16,8 +16,7 @@ RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
 # необходимые apt-пакеты
 RUN apt-get update && apt-get install -y \
     dos2unix \
-    python3-catkin-tools \
-    && rm -rf /var/lib/apt/lists/*
+    python3-catkin-tools
 
 # копируем .bashrc
 COPY bashrc /home/${USERNAME}/.bashrc
