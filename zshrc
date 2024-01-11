@@ -2,6 +2,11 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
+# zsh theme
+ZSH_THEME="agnoster"
+
+source $ZSH/oh-my-zsh.sh
+
 # ROS paths
 source /opt/ros/noetic/setup.zsh
 source ~/moveit_ws/devel/setup.zsh
