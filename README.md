@@ -1,4 +1,4 @@
-# manipulator_experiments
+# moveit_experiments
 
 ## Инструкция по работе с контейнером
 
