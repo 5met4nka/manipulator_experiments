@@ -15,9 +15,15 @@ RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
 
 # необходимые apt-пакеты
 RUN apt-get update && apt-get install -y \
+    curl \
+    zsh \
+    git \
+    sudo \
     dos2unix \
     python3-catkin-tools
 
+RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # копируем .bashrc
-COPY bashrc /home/${USERNAME}/.bashrc
-RUN dos2unix /home/${USERNAME}/.bashrc
+COPY zshrc /home/${USERNAME}/.zshrc
+RUN dos2unix /home/${USERNAME}/.zshrc
