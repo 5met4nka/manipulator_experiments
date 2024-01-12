@@ -40,7 +40,7 @@ catkin config --extend /opt/ros/noetic
 
 * устанавливаем все зависимости
 
-rosdep install -y . \
-    --from-paths src \
+rosdep install -y -r \
+    --from-paths src/ \
     --ignore-src \
     --rosdistro noetic
