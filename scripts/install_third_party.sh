@@ -15,6 +15,3 @@ git -C ../third_party clone https://github.com/ros-industrial/motoman.git -b kin
 # abb
 git -C ../third_party clone https://github.com/ros-industrial/abb_experimental.git -b kinetic-devel
 git -C ../third_party clone https://github.com/ros-industrial/abb.git -b kinetic-devel
-
-sudo apt-get update && sudo apt-get install -y \
-    ros-$ROS_DISTRO-moveit
