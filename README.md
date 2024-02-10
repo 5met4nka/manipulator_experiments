@@ -27,7 +27,7 @@ docker container run -it `
     --name=moveit_experiments `
     --network=host `
     --ipc=host `
-    --volume=C:\Users\$env:USERPROFILE\Documents\moveit_ws\src:/root/moveit_ws/src `
+    --volume=$env:USERPROFILE\Documents\moveit_ws\src:/root/moveit_ws/src `
     -e DISPLAY=host.docker.internal:0.0 `
     lsd-maddrive-ros:noetic-desktop-full
 ```
