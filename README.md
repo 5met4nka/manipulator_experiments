@@ -38,6 +38,12 @@ docker container run -it `
 catkin config --extend /opt/ros/noetic
 ```
 
+* обновляем список доступных зависимостей
+
+```bash
+rosdep update
+```
+
 * устанавливаем все зависимости
 
 ```bash
