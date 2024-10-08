@@ -17,4 +17,4 @@ git -C ../third_party clone https://github.com/ros-industrial/motoman_experiment
 # abb
 git -C ../third_party clone https://github.com/ros-industrial/abb_experimental.git -b kinetic-devel
 git -C ../third_party clone https://github.com/ros-industrial/abb.git -b kinetic-devel
-git -C ../third_party clone https://github.com/ros-industrial/abb_driver.git -b kinetic-devel
+git -C ../third_party clone https://github.com/ros-industrial/abb_driver.git -b melodic-devel
