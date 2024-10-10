@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(fanuc_lrmate200id7l_moveit_config)
+project(planning_system)
 
 find_package(catkin REQUIRED)
 
