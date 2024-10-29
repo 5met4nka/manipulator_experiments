@@ -22,3 +22,6 @@ git -C ../third_party clone https://github.com/ros-industrial/abb_driver.git -b 
 # moveit tutorials (source https://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html)
 git -C ../third_party clone https://github.com/ros-planning/moveit_tutorials.git -b master
 git -C ../third_party clone https://github.com/ros-planning/panda_moveit_config.git -b noetic-devel
+
+# rosserial
+git -C ../third_party clone https://github.com/ros-drivers/rosserial.git -b noetic-devel
