@@ -1,0 +1,7 @@
+<launch>
+
+    <include file="$(find fanuc_lrmate200id7l_moveit_config)/launch/moveit_rviz.launch">
+        <arg name="config" value="true"/>
+    </include>
+
+</launch>
