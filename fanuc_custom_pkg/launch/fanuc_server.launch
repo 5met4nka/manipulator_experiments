@@ -11,12 +11,14 @@
         <arg name="load_robot_description" value="true" />
     </include>
 
+    <!-- ROS >> robot driver -->
     <include file="$(find fanuc_lrmate200id_support)/launch/robot_interface_streaming_lrmate200id7l.launch" >
         <arg name="robot_ip" value="$(arg robot_ip)"/>
     </include>
 
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 
+    <!-- MoveIt stack -->
     <include file="$(find fanuc_lrmate200id7l_moveit_config)/launch/move_group.launch">
         <arg name="publish_monitored_planning_scene" value="true" />
     </include>
@@ -25,9 +27,19 @@
         <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
     </include>
 
+    <!-- gripper control -->
     <include file="$(find pneumatic_gripper_control)/launch/gripper_control.launch">
         <arg name="port" value="/dev/ttyACM0"/>
         <arg name="baud" value="57600"/>
     </include>
+
+    <!-- logitech camera node -->
+    <!-- <node name="logitech_c270_cam_node" pkg="usb_cam" type="usb_cam_node" output="screen">
+        <param name="video_device" value="/dev/video0"/>
+        <param name="full_ffmpeg_log" value="false"/>
+        <param name="image_wight" value="1280"/>
+        <param name="image_height" value="720"/>
+        <param name="framerate" value="30"/>
+    </node> -->
 
 </launch>
