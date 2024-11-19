@@ -211,10 +211,13 @@
       </inertial>
     </link>
 
-    <joint name="${prefix}tool-leftfinger" type="fixed">
-      <origin xyz="0.130 0 0.0315" rpy="0 0 0" />
+    <joint name="${prefix}tool-leftfinger" type="prismatic">
+      <origin xyz="0.130 0 0.035" rpy="0 0 0" />
       <parent link="${prefix}tool" />
       <child link="${prefix}leftfinger" />
+      <axis xyz="0 0 1"/>
+      <limit effort="100" lower="-0.0035" upper="0" velocity="0.2" />
+
     </joint>
 
     <link name="${prefix}leftfinger">
@@ -242,10 +245,12 @@
       </inertial>
     </link>
 
-    <joint name="${prefix}tool-rightfinger" type="fixed">
-      <origin xyz="0.130 0 -0.0315" rpy="0 0 0" />
+    <joint name="${prefix}tool-rightfinger" type="prismatic">
+      <origin xyz="0.130 0 -0.035" rpy="0 0 0" />
       <parent link="${prefix}tool" />
       <child link="${prefix}rightfinger" />
+      <axis xyz="0 0 1"/>
+      <limit effort="100" lower="0.0" upper="0.0035" velocity="0.2" />
     </joint>
 
     <link name="${prefix}rightfinger">
