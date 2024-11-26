@@ -24,17 +24,18 @@ git -C ../third_party clone https://github.com/ros-planning/moveit_tutorials.git
 git -C ../third_party clone https://github.com/ros-planning/panda_moveit_config.git -b noetic-devel
 
 # moveit source
-# git -C ../third_party clone https://github.com/moveit/moveit_msgs.git -b master
-# git -C ../third_party clone https://github.com/moveit/moveit_resources.git -b master
-# git -C ../third_party clone https://github.com/moveit/geometric_shapes.git -b noetic-devel
-# git -C ../third_party clone https://github.com/moveit/srdfdom -b noetic-devel
-# git -C ../third_party clone https://github.com/moveit/moveit.git -b master
-# git -C ../third_party clone https://github.com/PickNikRobotics/rviz_visual_tools -b master
-# git -C ../third_party clone https://github.com/moveit/moveit_visual_tools.git -b master
-# git -C ../third_party clone https://github.com/moveit/moveit_tutorials.git -b master
-# git -C ../third_party clone https://github.com/moveit/panda_moveit_config.git -b noetic-devel
+git -C ../third_party clone https://github.com/moveit/moveit_msgs.git -b master
+git -C ../third_party clone https://github.com/moveit/moveit_resources.git -b master
+git -C ../third_party clone https://github.com/moveit/geometric_shapes.git -b noetic-devel
+git -C ../third_party clone https://github.com/moveit/srdfdom -b noetic-devel
+git -C ../third_party clone https://github.com/moveit/moveit.git -b master
+git -C ../third_party clone https://github.com/PickNikRobotics/rviz_visual_tools -b master
+git -C ../third_party clone https://github.com/moveit/moveit_visual_tools.git -b master
+git -C ../third_party clone https://github.com/moveit/moveit_tutorials.git -b master
+git -C ../third_party clone https://github.com/moveit/panda_moveit_config.git -b noetic-devel
 
 # rosserial
 git -C ../third_party clone https://github.com/ros-drivers/rosserial.git -b noetic-devel
 
+# realsense-ros driver
 git -C ../third_party clone https://github.com/IntelRealSense/realsense-ros.git -b 2.3.2
